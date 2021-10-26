@@ -191,39 +191,102 @@ public class Main {
 //        System.out.println(c);
 //
 // 3 užd
-        char[] charArr= new char[200];
+//        char[] charArr= new char[200];
+//        char a= 'A';
+//        char b= 'B';
+//        char c= 'C';
+//        char d= 'D';
+//        int aCounter=0;
+//        int bCounter=0;
+//        int cCounter=0;
+//        int dCounter=0;
+//
+//        for (int i = 0; i <charArr.length ; i++) {
+//            String chars = "ABCD";
+//            Random rnd = new Random();
+//            char ch = chars.charAt(rnd.nextInt(chars.length()));
+//            charArr[i]=ch;
+//            if (charArr[i]==a){
+//                aCounter++;
+//            }
+//            else if (charArr[i]==b){
+//                bCounter++;
+//            }
+//            else if (charArr[i]==c){
+//                cCounter++;
+//            }
+//            else {
+//                dCounter++;
+//            }
+//        }
+////        System.out.println(Arrays.toString(charArr));
+//        System.out.println("Masyve yra " + aCounter + " A raidės");
+//        System.out.println("Masyve yra " + bCounter + " B raidės");
+//        System.out.println("Masyve yra " + cCounter + " C raidės");
+//        System.out.println("Masyve yra " + dCounter + " D raidės");
+
+//      4 UŽD
+//        Arrays.sort(charArr);
+//        for(int i = 0; i < charArr.length; i++){
+//            System.out.print(charArr[i] + " ");
+//        }
+
+        // 5užd.
+
         char a= 'A';
         char b= 'B';
         char c= 'C';
+        char d= 'D';
+
         int aCounter=0;
         int bCounter=0;
         int cCounter=0;
 
-        for (int i = 0; i <charArr.length ; i++) {
-            String chars = "ABC";
+        char[] AcharArr= new char[200]; //1 MASYVAS SU RANDOM RAIDĖM
+        for (int i = 0; i <AcharArr.length ; i++) {
+            String chars = "ABCD";
             Random rnd = new Random();
             char ch = chars.charAt(rnd.nextInt(chars.length()));
-            charArr[i]=ch;
-            if (charArr[i]==a){
-                aCounter++;
-            }
-            else if (charArr[i]==b){
-                bCounter++;
-            }
-            else {
-                cCounter++;
-            }
+            AcharArr[i]=ch;
         }
-//        System.out.println(Arrays.toString(charArr));
-        System.out.println("Masyve yra " + aCounter + " raidės");
-        System.out.println("Masyve yra " + bCounter + " raidės");
-        System.out.println("Masyve yra " + cCounter + " raidės");
+        System.out.println(AcharArr);
 
-//      4 UŽD
-        Arrays.sort(charArr);
-        for(int i = 0; i < charArr.length; i++){
-            System.out.print(charArr[i] + " ");
+        char[] BcharArr= new char[200]; //2 MASYVAS SU RANDOM RAIDĖM
+        for (int i = 0; i <BcharArr.length ; i++) {
+            String chars = "ABCD";
+            Random rnd = new Random();
+            char ch = chars.charAt(rnd.nextInt(chars.length()));
+            BcharArr[i]=ch;
         }
+        System.out.println(BcharArr);
+
+        char[] CcharArr= new char[200]; //3 MASYVAS SU RANDOM RAIDĖM
+        for (int i = 0; i <CcharArr.length ; i++) {
+            String chars = "ABCD";
+            Random rnd = new Random();
+            char ch = chars.charAt(rnd.nextInt(chars.length()));
+            CcharArr[i]=ch;
+        }
+        System.out.println(CcharArr);
+
+        String [] combo= new String [200]; // 4 MASYVAS SUSUMUOTAS SU 3 MASYVŲ RAIDĖMIS.
+        for (int i = 0; i < combo.length; i++) {
+            String tmp= AcharArr[i] + "" + BcharArr[i] + "" + CcharArr[i];
+            combo[i]=tmp;
+        }
+        System.out.println(Arrays.toString(combo));
+
+        for (int i = 0; i < combo.length ; i++) {
+
+        }
+
+
+
+
+
+
+
+
 
 
 
